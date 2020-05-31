@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <!--icon library-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+      <!--/Bootstrap css-->
+      <!-- own css file link-->
+      <link rel="stylesheet" type="text/css" href="indexcss.css">
+      <link rel="stylesheet" type="text/css" href="userdashborarcss.css" >
+      <link rel="stylesheet" type="text/css" href="upload_img_css.css" >
+      <!--/own css-->
+
+    <title>Sell Book</title>
+
+
+    <style>      
+      
+      /* fix padding under menu after resize */
+      @media screen and (min-width:420px) and (max-width:575px)
+      {
+        .container{
+          padding-top:120px;
+          padding-right: 60px;
+        }
+        .col-space
+        {
+          margin-top: 20px;
+        }
+      }
+      @media screen and (max-width: 767px) {/*small 60*/
+          .container 
+          { padding-top: 120px;
+            padding-left:60px; }  
+          .col-space
+        {
+          margin-top: 20px;
+        }
+        .isize{
+              width: 200px;;
+            
+          }
+      }
+      @media screen and (min-width:768px) and (max-width: 991px) {
+          .container { padding-top: 130px; }/*med 110*/
+          /* input size*/
+          .isize
+      {
+        width:160px;
+        margin-right: 10px;
+      }
+      }
+      @media screen and (min-width: 992px) {
+         .container
+           { padding-top: 140px;
+              padding-left:150px; 
+           }
+            .isize{
+              width:250px;
+            
+          }/*large 60*/
+      }
+     
+      /*.opaque-content {
+   opacity: .5;
+   transition: opacity 300ms ease-in-out;
+}*/
+  </style>
+</head>
+
+<body >
+   
+    <nav class="navbar navbar-expand-xl navcol fixed-top " style="position: fixed;">
+        
+        <a class="navbar-brand"href="#" >
+        
+          <img src="logo/2.jpg" class="mx-auto" alt="brand logo">
+       
+        </a>
+        <ul class="navbar-nav ml-auto ">
+        <li class="nav-item"  >
+         <a href="#" class="btn" style="font-size:20px; width: 100px; ">
+          <img src="logo/cart3.PNG" alt="cartlog" >
+          <span id="totalcartitem" class="badge text-light" style="top: -20px;right: 20px;background-color:#e94d1c">0</span>
+        </a>
+          <!--  <span class=" badge text-light bg-danger " style="position: relative;" id="cartval">10 </span></i>
+        -->
+          </li>
+     
+          <!--<ul class="navbar-nav ml-auto">-->
+            <li class="nav-item">
+           <a class=" collapse navbar-collapse p-2" style="cursor:pointer;">
+             <img src="image/micon.png"id="imenu" >
+           </a>
+         </li>
+         
+         
+           </ul>
+
+      <button type="button" class="navbar-toggler custom-toggler " data-toggle="collapse" id="cnavimenu"data-target="#userMenu">
+        
+           
+        <span class="navbar-toggler-icon">
+              </span>
+      </button>
+      
+      
+      </nav> 
+    
+      
+      <div class="vertical-menu" id="usermenu" style="margin-left:-30px;">
+        
+          <ul>  
+            <div class="header p-2  sticky-top " style="background-color:rgb(77, 77, 77);">
+              <span >Amit Singh</span>
+              <br>
+              <span>9576385389 </span>
+            </div>
+              <a href="userdashboard.html" class="fa fa-home"> Home</a>
+              <hr class="m-0 p-0 "style="border-bottom:solid rgba(0,0,0,0.3) thin">
+              <a href="#" >View Books</a>
+              <a href="#"   >Sell Books</a> 
+              <hr class="m-0 p-0 "style="border-bottom:solid rgba(0,0,0,0.3) thin">
+              <a href="#" >My Books</a>
+              <a href="#" >My orders</a>
+              <hr class="m-0 p-0" style="border-bottom:solid rgba(0,0,0,0.3) thin">
+              <a href="#" > Notification</a> 
+              <hr class="m-0 p-0" style="border-bottom:solid rgba(0,0,0,0.3) thin">
+              <a href="#" > Change Password</a>
+              <a href="#">Logout</a>
+              <hr class="m-0 p-0" style="border-bottom:solid rgba(0,0,0,0.3) thin">
+              <a href="#" > Contact Us</a>
+              <a href="#" >  Admin-Login</a>
+              <br>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+     
+         <!--col-space for when we view our page into small screen then our form collapse into only 2 row but in full screen 4 row so we have to add space into last two col so we use col-space and define into style tag-->
+         
+          
+   
+      </div>   
+         <div class="container position-realtive " >
+              <!--<fieldset style="border: black 2px solid;"><legend> Book Details</legend>-->
+              <div>
+                <div class="alert alert-info" role="alert">
+                  
+                 <strong> Note: </strong> The pickup services are only available in <b>Chapra</b> as of now.
+                </div>
+                <!--<div class="col-*-*">book Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>-->
+              <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6 B">Book Name</div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-6"> <input type="text" class="text isize" placeholder="Book Name"></div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6 col-space">Author Name</div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-6 col-space"> <input type="text " class="text isize" placeholder="Author Name"></div>
+              </div>
+              <div class="row " style="margin-top: 25px;">
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6 ">Publication Name</div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-6"> <input type="text" class="text isize" placeholder="Publication Name"></div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6 col-space">Category</div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-6 col-space"> 
+                  <!--<input type="text " class="text isize" placeholder="Book Category">-->
+                  <select class="isize">
+                    <option>--Select--</option>
+                    <option>Science</option> <option>Drama </option> <option>Action & Adventure</option> <option>Romance</option>
+                     <option>Mystery</option> <option> Horror</option>
+                    <option>Health</option> <option>Travel</option> <option> Childrens</option> <option>Dictionaries</option> <option>History</option> <option>Cook Books</option>
+                    <option> Math</option> <option>Autobiographies</option> <option>Comics</option> <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 25px;">
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6"> Book Language</div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-6"> 
+                  <!--<input type="text" class="text isize" placeholder="Book Language">-->
+                <select class="isize">
+                  <option>English</option>
+                  <option>Hindi</option>
+                  <option>Bhojpuri</option>
+                </select>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6 col-space"> Edition</div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-6 col-space"><input type="number" class="number isize" placeholder="Edition eg:- 7"></div>
+              </div>
+              <div class="row" style="margin-top: 25px;">
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6">ISBN</div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-6"> <input type="number" class="number isize" placeholder="13-digit isbn"></div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6 col-space">Book Condition</div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-6 col-space"> 
+                  <!--<input type="text" class="text isize" placeholder="Book Condition">-->
+                <select class="isize">
+                  <option>--Select--</option>
+                  <option> New  </option>
+                  <option> Good</option>
+                  <option> Fair</option>
+                  <option> Poor</option>
+                  </select>
+                
+                </div>
+              </div>
+              <div class="row" style="margin-top: 25px;">  
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6">Price</div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-6"> <input type="text" class="text isize" placeholder="Price"></div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6 col-space">Description</div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-6 col-space"> <textarea type="" class=" isize" size=""  placeholder=""></textarea> </div>
+              </div>
+
+              <!--upload image-->
+              <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+  
+                  <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Upload Image</button>
+    
+                  <div class="image-upload-wrap" style="display: none;">
+                  <input class="file-upload-input" type="file"  onchange="readURL(this);" accept="image/*" />
+                </div>
+  
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6"> 
+  
+                  <div class="file-upload-content">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                      <button class="remove-image"> <span class="image-title">Uploaded Image</span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-7 col-md-6 col-sm-10 col-10 p-3" style="text-align: right;">   
+                  <button type="button" class="btn btn-success btn-lg mr-5 ">Submit</button></div>
+              </div>  
+
+              <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-5" >
+              
+              </div>
+              </div>
+              
+              </div>
+            </div><!--</fieldset>-->
+          </div>
+          
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+                  
+          <script>
+            //side bar toggle
+                $(document).ready(function()
+                 {
+                  $('#imenu').on('click',function(){
+                  $('#usermenu').toggle(); 
+                  $('$cartval').show();
+                   });
+                 $('#cnavimenu').on('click',function(){
+                 $('#usermenu').toggle(); 
+                 });
+                 });
+                         
+      
+            //upload image
+            function readURL(input) {
+        if (input.files && input.files[0]) {
+      
+          var reader = new FileReader();
+      
+          reader.onload = function(e) {
+            $('.image-upload-wrap').hide();
+      
+            $('.file-upload-image').attr('src', e.target.result);
+            $('.file-upload-content').show();
+      
+            $('.image-title').html(input.files[0].name);
+          };
+      
+          reader.readAsDataURL(input.files[0]);
+      
+        } else {
+          //removeUpload();
+        }
+      }
+      /*
+      function removeUpload() {
+        $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+        $('.file-upload-content').hide();
+        //$('.image-upload-wrap').show();
+        
+      }
+      $('.image-upload-wrap').bind('dragover', function () {
+          $('.image-upload-wrap').addClass('image-dropping');
+        });
+        $('.image-upload-wrap').bind('dragleave', function () {
+          $('.image-upload-wrap').removeClass('image-dropping');
+      });*/
+      //upload image
+          </script>   
+</body>
+</html>

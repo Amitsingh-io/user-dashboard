@@ -1,0 +1,26 @@
+
+  
+  .vertical-menu {
+    margin-top: 100px;
+    width: 250px;
+    height: 65%;
+    overflow-y: auto;
+    display: none;
+    z-index: 5;
+    position: fixed;
+    background-color: white;
+    
+  }
+  .vertical-menu a {
+    display: block;
+    font-size: medium;
+    padding: 5px;
+    text-decoration: none;
+    color:black;
+  }
+  .vertical-menu span{
+    
+   font-style:normal;
+    color:white
+  }
+  
